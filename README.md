@@ -1,81 +1,41 @@
-# Turborepo starter
+# Wallet Functionality with Next.js, Express, Tailwind CSS, PostgreSQL, and Prisma
 
-This is an official starter Turborepo.
+This monorepo houses a comprehensive wallet functionality inspired by platforms like Paytm. Built with Next.js for front-end rendering, Express for server-side logic, Tailwind CSS for sleek styling, PostgreSQL for data storage, and Prisma for database management, this project enables users to seamlessly manage their digital wallets.
 
-## Using this example
+## Key Features
 
-Run the following command:
+1. **Wallet Management:** Users can deposit money into their digital wallets from their bank accounts securely.
+2. **Transaction Processing:** Facilitates smooth and secure transactions, ensuring reliability and integrity.
+3. **Balance Inquiry:** Allows users to check their wallet balance in real-time.
+4. **Payment Functionality:** Users can make payments conveniently using the balance in their wallets.
+5. **Bank Transfer:** Provides functionality for users to transfer funds from their wallets back to their bank accounts.
+6. **Secure Authentication:** Implements robust authentication mechanisms to safeguard user accounts and transactions.
+7. **Responsive Design:** Ensures a seamless user experience across various devices and screen sizes.
 
-```sh
-npx create-turbo@latest
-```
+## Tech Stack
 
-## What's inside?
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Express.js, Node.js
+- **Database:** PostgreSQL, Prisma
+- **Authentication:** JWT (JSON Web Tokens)
 
-This Turborepo includes the following packages/apps:
+## Getting Started
 
-### Apps and Packages
+1. Clone this repository to your local machine.
+2. Navigate to the respective directories for frontend and backend.
+3. Install dependencies using `npm install`.
+4. Set up your PostgreSQL database and update the connection details in the `.env` file.
+5. Run migrations using Prisma to set up the database schema.
+6. Start the development server for both frontend and backend.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+## Contributing
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Contributions are welcome! If you have any ideas for improvements, feel free to open an issue or submit a pull request. Please adhere to the project's code of conduct.
 
-### Utilities
+## License
 
-This Turborepo has some additional tools already setup for you:
+This project is licensed under the NIT License.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Authors
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- Sanghrakshit gautam
