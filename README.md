@@ -32,10 +32,6 @@ This monorepo houses a comprehensive wallet functionality inspired by platforms 
 
 Contributions are welcome! If you have any ideas for improvements, feel free to open an issue or submit a pull request. Please adhere to the project's code of conduct.
 
-## License
-
-This project is licensed under the NIT License.
-
 ## Authors
 
 - Sanghrakshit gautam
