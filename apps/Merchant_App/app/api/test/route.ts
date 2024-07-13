@@ -5,9 +5,9 @@ export const POST = async () => {
     console.log("Creating user...");
     await prisma.user.create({
         data: {
-            Name: "Sanghrakshit",
-            username: "SexaaaA@gmail.com",
-            password: "123456789"
+            Name: "Sanghrakshit2",
+            username: "Sexaaa2A@gmail.com",
+            password: "1234567891"
         }
     });
     console.log("User created successfully");
