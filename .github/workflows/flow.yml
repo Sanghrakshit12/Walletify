@@ -1,0 +1,35 @@
+name: Notify Slack on Image Tag Update
+
+# Trigger the workflow on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check for image tag updates
+      id: check_image
+      run: |
+        # Find YAML files and check if they contain an updated image tag
+        git diff HEAD~1 --name-only | grep '\.yaml$' | xargs grep -q 'image:'
+        if [ $? -eq 0 ]; then
+          echo "Image tag updated."
+          echo "::set-output name=updated::true"
+        else
+          echo "No image tag updated."
+          echo "::set-output name=updated::false"
+        fi
+
+    - name: Send Slack notification
+      if: steps.check_image.outputs.updated == 'true'
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: 'https://hooks.slack.com/services/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'
+      with:
+        message: "A new image tag has been updated in the Kubernetes deployment."
